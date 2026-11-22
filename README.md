@@ -457,10 +457,3 @@ header('location: index.php');
 ![Data sebelum dihapus](lab8_php_database/screenshots/10-hapus-sebelum.png)
 ![Data setelah dihapus](lab8_php_database/screenshots/10-hapus-sesudah.png)
  
----
- 
-## Catatan
- 
-- Seluruh query pada praktikum ini masih menyisipkan input langsung ke dalam SQL, sehingga rentan terhadap **SQL Injection**. Untuk aplikasi nyata, gunakan *prepared statement* (`mysqli_prepare()` / `bind_param()`) atau minimal `mysqli_real_escape_string()`.
-- Nilai yang ditampilkan dari database sebaiknya dibungkus `htmlspecialchars()` untuk mencegah XSS.
-- Pada kode modul terdapat beberapa bagian yang disesuaikan agar program berjalan sesuai tampilan hasil: kolom **Aksi** pada `index.php` berisi tautan Ubah/Hapus (bukan hanya `id_barang`), tautan **Tambah Barang** ditambahkan, urutan kolom header disamakan dengan datanya, `enctype` pada `ubah.php` diperbaiki menjadi `multipart/form-data`, dan fungsi `is_select()` memakai nilai pembanding yang sesuai dengan setiap opsi kategori.
