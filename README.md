@@ -31,6 +31,7 @@ Lab8Web/
 │   ├── tambah.php       # Form dan proses tambah data (Create)
 │   ├── ubah.php         # Form dan proses ubah data (Update)
 │   ├── hapus.php        # Proses hapus data (Delete)
+|   ├── style.css        # Pengaturan Gambar
 │   ├── gambar/          # Folder penyimpanan gambar barang
 │   └── screenshots/     # Capture hasil di browser
 └── README.md            # Panduan proyek dan penjelasan tiap langkah
